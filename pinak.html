@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinak Graphic designer </title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(45deg, #0077b6, #00b4d8);
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #023e8a;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #caf0f8;
+        }
+        .section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2rem;
+            color: #023e8a;
+            margin-bottom: 1.5rem;
+        }
+        .info-box {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            background: #e0f7fa;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            color: #333;
+            font-size: 1rem;
+        }
+        form {
+            max-width: 500px;
+            margin: auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+        form label {
+            font-weight: bold;
+            display: block;
+            margin: 1rem 0 0.5rem;
+            color: #0077b6;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        form button {
+            background: #023e8a;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        form button:hover {
+            background: #0077b6;
+        }
+        #contact p {
+            font-size: 1.1rem;
+            color: #333;
+            line-height: 1.6;
+        }
+        .footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #023e8a;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pinak Graphic designer </h1>
+    </header>
+
+    <nav>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#order">Order Now</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="portfolio" class="section">
+        <h2>My Work</h2>
+        <div class="portfolio">
+            <img src="https://i.postimg.cc/hvKQm1PZ/20241027-204004.jpg" alt="Design 1">
+            <img src="https://i.postimg.cc/1zNv7sch/1d16ce50d8c89c6950dcb5c72075f6ae.jpg" alt="Design 2">
+            <img src="https://i.postimg.cc/5NJc76Ny/53936d30b57e24603afe6858f94d41cc.jpg" alt="Design 3">
+        </div>
+    </section>
+
+    <section id="order" class="section">
+        <h2>Order Your Design</h2>
+
+        <div class="info-box">
+            <p>আপনি অর্ডার করার পর অগ্রিম কিছু অর্থ আপনাকে প্রদান করতে হবে এবং কাজের পর আপনি সম্পূর্ণ টাকা দিয়ে দিবেন।</p>
+            <p>এখানে আপনার কাজটি সম্পূর্ণ হতে সর্বোচ্চ একদিন থেকে তিন দিন লাগতে পারে।</p>
+            <p>আপনি যখন ফর্মটি ফিলাপ করে হোয়াটসঅ্যাপে প্রবেশ করবেন, ওইখানে আপনি আপনার ডিজাইনটির জন্য দাম নির্ধারণ করতে পারেন বা বলতে পারেন ডিজাইনারকে।</p>
+            <p><strong>টাকা পাঠানোর জন্য:</strong><br>বিকাশ: 8801775792780<br>নগদ: 8801775792780</p>
+        </div>
+
+        <form id="orderForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="designType">Design Type</label>
+            <input type="text" id="designType" name="designType" placeholder="e.g., Logo, Banner, Social Media Post" required>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="4" placeholder="Describe your design requirements"></textarea>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>About Me</h2>
+        <p>আমার নাম পিনাক চক্রবর্তী। আমি পাঁচ বছর ধরে গ্রাফিক্স ডিজাইনের কাজ করছি।</p>
+        <p><strong>যে কোন প্রয়োজনে যোগাযোগ করুন:</strong><br>ইমেইল : pinakjoy50@gmail.com<br>WhatsApp : 8801775792780</p>
+    </section>
+
+    <div class="footer">
+        <p>© 2024 Pinak Chakraborty. All rights reserved.</p>
+    </div>
+
+    <script>
+        document.querySelector("#orderForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            const designType = document.getElementById("designType").value;
+            const description = document.getElementById("description").value;
+
+            const whatsappURL = `https://wa.me/8801775792780?text=Name:%20${encodeURIComponent(name)}%0ADesign%20Type:%20${encodeURIComponent(designType)}%0ADescription:%20${encodeURIComponent(description)}`;
+            window.open(whatsappURL, "_blank");
+        });
+    </script>
+
+</body>
+</html>
